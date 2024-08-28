@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Shopping Cart",
+        "image": "/images/shoppingcart.png",
+        "description": "The React shopping cart project simulates the experience of an user buying online goods. It has been developed with Typescript, Tailwind and dummyjson API. I could improve many concepts when developing it, such as Tailwind skills and component architecture.",
+        "live": "https://shopping-cart-9aw5.onrender.com",
+        "github": "https://github.com/andrepolzin/shopping-cart"
+    },
+    {
+        "title": "Photo Album",
+        "image": "/images/photoalbum.png",
+        "description": "React/TypeScript photo album loading data from Unsplash API, designed with Tailwind. This project allows someone to filter photos by category or/and specific name.",
+        "live": "https://react-photo-album.onrender.com",
+        "github": "https://github.com/andrepolzin/react-photo-album"
+    },
+    {
+        "title": "To Do List",
+        "image": "/images/todolist.png",
+        "description": "To Do List is a project that allows people to create a list of tasks and delete each task. It was developed on ReactJS, TailwindCSS and TypeScript. Also all the tasks are stored on the LocalStorage and then shown on the screen.",
+        "live": "https://react-todo-list-tu6d.onrender.com",
+        "github": "https://github.com/andrepolzin/todo-list"
+    },
+    {
+        "title": "Quiz Game",
+        "image": "/images/quizgame.png",
+        "description": "This project is an Interactive Quiz Game that was created based on technologies such as: vanilla JavaScript, CSS, HTML, LocalStorage, APIs. The quiz game is based on multiple-choice questions along with a timer. Then, the answers are saved on Local Storage, being printed out on the screen by the end of the game.",
+        "live": "https://andrepolzin.github.io/api_quiz_game",
+        "github": "https://github.com/andrepolzin/api_quiz_game"
+    },
+    {
+        "title": "Team Generator",
+        "image": "/images/teamgenerator.png",
+        "description": "Team Generator is a Node.Js terminal project that utilizes object oriented programming concepts with the help of inquirer to prompt for team member's information and then create a web page with all team members.",
+        "live": "https://andrepolzin.github.io/team_generator_oop",
+        "github": "https://github.com/andrepolzin/team_generator_oop"
+    }
+]
