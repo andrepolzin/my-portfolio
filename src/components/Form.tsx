@@ -11,17 +11,17 @@ const Form = () => {
     event.preventDefault();
 
     emailjs
-      .sendForm('service_nc5tnzo', 'template_gvvsf1b', form.current, {
+      .sendForm('service_nc5tnzo', 'template_gvvsf1b', form?.current, {
         publicKey: 'H4KtkZUUKtfyT8N3S',
       })
       .then(
         () => {
           setSuccess('The message has been sent! ✅');
-          form.current.reset()
+          form?.current?.reset()
         },
         (error) => {
           setError('Opss, something went wrong ❌, try again!');
-          form.current.reset()
+          form?.current?.reset()
         },
       );
   };
