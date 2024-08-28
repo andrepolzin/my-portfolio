@@ -26,7 +26,7 @@ const Form = () => {
       );
   };
 
-
+  
 
   return (
     <div>
@@ -42,7 +42,7 @@ const Form = () => {
 
         <div className="flex flex-col">
           <label>Email</label>
-          <input type="text"  name="user_email" className="py-2 px-2 rounded w-96 text-black" required/>
+          <input type="email"  name="user_email" className="py-2 px-2 rounded w-96 text-black" required/>
         </div>
 
         <div className="flex flex-col">
