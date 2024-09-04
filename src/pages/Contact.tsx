@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import Form from "../components/Form";
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }, [])
 
 
   return (

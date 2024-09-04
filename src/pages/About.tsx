@@ -1,5 +1,14 @@
+import { useEffect } from "react";
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }, [])
+  
   return (
     <div>
       <h1 className="flex justify-center h-40 text-white font-serif items-center text-4xl underline decoration-wavy animate-pulse">About Me</h1>

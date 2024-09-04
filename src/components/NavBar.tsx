@@ -17,25 +17,25 @@ const NavBar = () => {
       <div className="flex items-center text-2xl gap-5">
         <NavLink
           to="/"
-          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#618685] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
         >
           Home
         </NavLink>
         <NavLink
           to="/projects"
-          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#618685] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
         >
           All Projects
         </NavLink>
         <NavLink
           to="/about"
-          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#618685] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
         >
           About
         </NavLink>
         <NavLink
           to="/contact"
-          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#618685] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+          className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
         >
           Contact
         </NavLink>

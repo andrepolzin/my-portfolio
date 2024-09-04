@@ -1,6 +1,6 @@
 const ProjectItem = ({ data }: any) => {
   return (
-    <div className="flex bg-[#1b5657] text-justify rounded text-white  w-4/5 p-10">
+    <div className="flex bg-[#1b5657] text-justify rounded text-white  w-4/5 p-10 hover:shadow-2xl hover:scale-110 duration-300">
       <img src={data.image} alt={data.title} className="w-3/6 min-h-96 rounded" />
       {/* <iframe src={data.live} referrerPolicy="" sandbox="allow-scripts" title={data.title} className="w-2/6 h-96 rounded"></iframe> */}
       <div className="p-5 font-serif w-4/6">

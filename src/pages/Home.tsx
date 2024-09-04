@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 import ProjectList from "../components/ProjectList";
 import projects from "../data/projects.json";
 import dev from "/images/dev.jpg";
+import { useEffect } from "react";
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }, [])
+  
   return (
     <div>
       <div className="flex justify-around items-center p-10 text-white font-serif tracking-wider text-5xl">
@@ -19,7 +28,7 @@ const Home = () => {
         <img
           src="/images/about.jpg"
           alt="myself"
-          className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110"
+          className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110 duration-300"
         />
       </div>
 
