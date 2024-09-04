@@ -13,7 +13,7 @@ const ProjectItem = ({ data }: any) => {
             href={data.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 border-2 rounded bg-[#618685] "
+            className="p-2 border-2 rounded bg-[#618685] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           >
             GitHub Repo
           </a>
@@ -21,7 +21,7 @@ const ProjectItem = ({ data }: any) => {
             href={data.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 border-2 rounded bg-[#618685]"
+            className="p-2 border-2 rounded bg-[#618685] transition hover:-translate-y-1 ease-in-out duration-300 hover:scale-110"
           >
             Check Live
           </a>

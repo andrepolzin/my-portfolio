@@ -49,7 +49,7 @@ const Form = () => {
           <label>Message</label>
           <textarea rows={5} name="message" className="py-2 px-2 rounded w-96 text-black" required/>
         </div>
-        <button type="submit" className="border-2 rounded p-2 w-fit mt-5 font-serif text-white bg-[#618685]">Send Message</button>
+        <button type="submit" className="border-2 rounded p-2 w-fit mt-5 font-serif text-white bg-[#618685] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">Send Message</button>
         {success && <p className='p-2 bg-[#376E6F] rounded'>{success}</p>}
         {error && <p className='p-2 bg-red-400 rounded'>{error}</p>}
       </form>

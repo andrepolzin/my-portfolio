@@ -2,7 +2,7 @@
 const About = () => {
   return (
     <div>
-      <h1 className="flex justify-center h-40 text-white font-serif items-center text-4xl underline decoration-wavy">About Me</h1>
+      <h1 className="flex justify-center h-40 text-white font-serif items-center text-4xl underline decoration-wavy animate-pulse">About Me</h1>
       <div className="flex justify-evenly h-fit items-start p-20">
         <p className="text-white w-2/4 text-3xl text-justify font-serif leading-relaxed">
           Hello, there! My name is André and I'm a self-taught software
