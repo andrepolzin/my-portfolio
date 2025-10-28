@@ -3,18 +3,18 @@ import tags  from "/images/tags.jpg"
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between items-center p-5 h-44 bg-gradient-to-l from-[#7fa8a8] via-[#408081] to-[#305e5e] text-white font-serif">
+    <div className="flex flex-wrap justify-around items-center gap-y-3 bg-gradient-to-l from-[#7fa8a8] via-[#408081] to-[#305e5e] text-white font-serif lg:p-8">
       <NavLink
         to="/about"
-        className="text-4xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+        className="text-4xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 pt-3 lg:pt-0"
       >
-        <span className="text-8xl text-[#0be70b5e] font-bold animate-pulse pr-3">A</span>
-        <span>NDRÉ </span>
-        <span className="text-8xl text-[#0be70b5e] font-bold animate-pulse pl-3">P</span>
-        <span>OLZIN</span>
+        <span className="text-5xl lg:text-5xl text-[#0be70b5e] font-bold animate-pulse pr-1 lg:pr-3">A</span>
+        <span className="text-sm lg:text-4xl">NDRÉ </span>
+        <span className="text-5xl lg:text-5xl text-[#0be70b5e] font-bold animate-pulse pl-3">P</span>
+        <span className="text-sm lg:text-4xl">OLZIN</span>
       </NavLink>
-      <img src={tags} alt="tags" className="w-52 h-36 rounded-3xl shadow-2xl animate-pulse" />
-      <div className="flex items-center text-2xl gap-5">
+      <img src={tags} alt="tags" className="w-10 lg:w-15 h-10 lg:h-15 rounded-3xl shadow-2xl animate-pulse " />
+      <div className="flex items-center text-lg justify-around bg-[#0c5555] w-full lg:w-fit lg:bg-transparent">
         <NavLink
           to="/"
           className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
@@ -25,7 +25,7 @@ const NavBar = () => {
           to="/projects"
           className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
         >
-          All Projects
+          Projects
         </NavLink>
         <NavLink
           to="/about"

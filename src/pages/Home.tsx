@@ -5,24 +5,23 @@ import dev from "/images/dev.jpg";
 import { useEffect } from "react";
 
 const Home = () => {
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
-    })
-  }, [])
-  
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div>
-      <div className="flex justify-around items-center p-10 text-white font-serif tracking-wider text-5xl">
+      <div className="flex flex-col justify-around items-center p-10 lg:flex-row text-white font-serif tracking-wider text-5xl">
         <img
           src={dev}
           alt="developer"
-          className="animate-bounce rounded-full w-80 h-80"
+          className="animate-bounce rounded-full w-10 h-10 lg:w-80 lg:h-80"
         />
         <p className="border-2 border-slate-300 p-10 rounded shadow-2xl text-center bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900">
-          FRONT-END DEVELOPER <br /> <br />
+          FULL-STACK DEVELOPER 
           ANDRÉ POLZIN
         </p>
         <img
@@ -33,37 +32,41 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col text-white font-serif tracking-wider gap-24 justify-center items-center">
-        <p className="text-justify text-3xl leading-relaxed border-b-2 shadow-lg w-2/4">
-          Hello, I am a React front-end developer with over 2 years of
-          experience in JavaScript along with Tailwind and TypeScript.
-          Comfortable with consuming APIs using Fetch or Axios. <br />
-          <br />
-          I have also got some knowledge about NodeJS, ExpressJS, being able to
-          perform CRUD operations using Insomnia. <br />
-          <br /> Familiar with PostgreSQL, but more importantly I am always
-          willing to learn new tolls/technologies.
-        </p>
+        <div className="flex flex-col gap-10 text-justify text-lg  border-b-2 shadow-lg p-5">
+          <p>
+            I am a passionate Software Developer with over a year of professional
+            experience and over 3 years building personal projects. I started
+            coding out of curiosity, and it quickly became a strong passion that
+            turned into a career.
 
-        <table className="flex flex-col justify-center items-center border border-collapse p-10 text-2xl font-serif bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900 gap-5">
-          <thead>
-            <tr className="text-3xl">Skills</tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border px-5">ReactJS</td>
-              <td className="border px-5">JavaScript</td>
-              <td className="border px-5">TypeScript</td>
-              <td className="border px-5">CSS and Tailwind</td>
-            </tr>
+          </p>
+          <p>
+            I love creating things from scratch, learning new technologies, and
+            improving with every project I work on. My focus is to keep growing as
+            a developer and contribute to building meaningful, high-quality
+            software.
+          </p>
+        </div>
 
-            <tr>
-              <td className="border px-5">NodeJS</td>
-              <td className="border px-5">ExpressJS</td>
-              <td className="border px-5">PostgreSQL</td>
-              <td className="border px-5">Git and GitHub</td>
-            </tr>
-          </tbody>
-        </table>
+        <div>
+          <p>Skills</p>
+
+          <ul>
+            <li>ReactJS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>CSS and Tailwind</li>
+          </ul>
+
+          <ul>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </div>
+
       </div>
 
       <div className="flex flex-col items-center mt-28 pt-10 border-t-2 leading-relaxed tracking-wider">

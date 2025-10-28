@@ -1,11 +1,10 @@
 import { FaWhatsapp, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
-import NavBar from "./NavBar";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-l from-[#7fa8a8] via-[#408081] to-[#305e5e] h-fit font-serif text-white border-t-2 p-10">
+    <div className="flex flex-col bg-gradient-to-l from-[#7fa8a8] via-[#408081] to-[#305e5e] h-fit font-serif text-white border-t-2 p-1">
       <div>
-        <ul className="flex text-4xl gap-8 p-7">
+        <ul className="flex text-lg gap-8 py-7 justify-center">
           <li className="bg-green-500 rounded-full p-2 transition hover:scale-110 duration-300 hover:-translate-y-1 ease-in-out">
             <a href="https://wa.me/5547992912811" target="_blank">
               <FaWhatsapp />
@@ -32,8 +31,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
-      <NavBar />
     </div>
   );
 };
