@@ -14,20 +14,20 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-around items-center p-10 lg:flex-row text-white font-serif tracking-wider text-5xl">
+      <div className="flex flex-col justify-around items-center p-5 lg:flex-row text-white font-serif tracking-wider text-m gap-2">
         <img
           src={dev}
           alt="developer"
           className="animate-bounce rounded-full w-10 h-10 lg:w-80 lg:h-80"
         />
-        <p className="border-2 border-slate-300 p-10 rounded shadow-2xl text-center bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900">
-          FULL-STACK DEVELOPER 
-          ANDRÉ POLZIN
+        <p className="border-2 border-slate-300 p-5 rounded shadow-2xl text-center bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900">
+          <span className="block">FULL-STACK DEVELOPER </span>
+          <span className="block">ANDRÉ POLZIN</span>
         </p>
         <img
           src="/images/about.jpg"
           alt="myself"
-          className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110 duration-300"
+          className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110 duration-300 w-52"
         />
       </div>
 

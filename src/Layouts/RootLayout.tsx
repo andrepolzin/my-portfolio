@@ -10,7 +10,7 @@ const RootLayout = () => {
         <NavBar />
       </header>
       <main className="bg-gradient-to-r from-[#7fa8a8] via-[#408081] to-[#305e5e] border-t-2">
-        {/* <Outlet /> */}
+        <Outlet />
       </main>
       <footer>
         <Footer />
