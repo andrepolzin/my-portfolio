@@ -8,13 +8,13 @@ const NavBar = () => {
         to="/about"
         className="text-4xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 pt-3 lg:pt-0"
       >
-        <span className="text-5xl lg:text-5xl text-[#0be70b5e] font-bold animate-pulse pr-1 lg:pr-3">A</span>
-        <span className="text-sm lg:text-4xl">NDRÉ </span>
-        <span className="text-5xl lg:text-5xl text-[#0be70b5e] font-bold animate-pulse pl-3">P</span>
-        <span className="text-sm lg:text-4xl">OLZIN</span>
+        <span className="text-5xl md:text-7xl text-[#0be70b5e] font-bold animate-pulse pr-1 lg:pr-3">A</span>
+        <span className="text-sm md:text-4xl">NDRÉ </span>
+        <span className="text-5xl md:text-7xl text-[#0be70b5e] font-bold animate-pulse pl-3">P</span>
+        <span className="text-sm md:text-4xl">OLZIN</span>
       </NavLink>
       <img src={tags} alt="tags" className="w-10 lg:w-15 h-10 lg:h-15 rounded-3xl shadow-2xl animate-pulse " />
-      <div className="flex items-center text-lg justify-around bg-[#0c5555] w-full lg:w-fit lg:bg-transparent">
+      <div className="flex items-center text-lg md:text-2xl justify-around bg-[#0c5555] w-full lg:w-fit lg:bg-transparent">
         <NavLink
           to="/"
           className=" hover:bg-[#376E6F] p-2 rounded hover:underline decoration-[#0be70b5e] underline-offset-8 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"

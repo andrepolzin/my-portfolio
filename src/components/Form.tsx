@@ -23,31 +23,32 @@ const Form = () => {
           setError('Opss, something went wrong ❌, try again!');
           form?.current?.reset()
         },
-      );
+      )
+      .catch((err) => console.log(`An error happened: ${err}`))
   };
 
   
 
   return (
-    <div>
+    <div className='w-full'>
       <form
         ref={form}
         onSubmit={(e) => sendEmail(e)}
-        className="flex flex-col justify-center items-center text-white font-serif gap-5 tracking-wider bg-[#618685] w-100 p-16 rounded-lg"
+        className="flex flex-col justify-center items-center text-white font-serif mx-auto my-5 p-5 gap-5 tracking-wider bg-[#618685] w-[80%] md:w-[60%] lg:w-[600px] md:p-16 rounded-lg"
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <label>Name</label>
-          <input type="text" name="user_name" className="py-2 px-2 rounded w-96 text-black" required/>
+          <input type="text" name="user_name" className="py-2 px-2 rounded text-black" required/>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <label>Email</label>
-          <input type="email"  name="user_email" className="py-2 px-2 rounded w-96 text-black" required/>
+          <input type="email"  name="user_email" className="py-2 px-2 rounded text-black" required/>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <label>Message</label>
-          <textarea rows={5} name="message" className="py-2 px-2 rounded w-96 text-black" required/>
+          <textarea rows={5} name="message" className="py-2 px-2 rounded text-black" required/>
         </div>
         <button type="submit" className="border-2 rounded p-2 w-fit mt-5 font-serif text-white bg-[#618685] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">Send Message</button>
         {success && <p className='p-2 bg-[#376E6F] rounded'>{success}</p>}

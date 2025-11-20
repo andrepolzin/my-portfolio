@@ -14,65 +14,74 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-around items-center p-5 lg:flex-row text-white font-serif tracking-wider text-m gap-2">
-        <img
-          src={dev}
-          alt="developer"
-          className="animate-bounce rounded-full w-10 h-10 lg:w-80 lg:h-80"
-        />
-        <p className="border-2 border-slate-300 p-5 rounded shadow-2xl text-center bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900">
-          <span className="block">FULL-STACK DEVELOPER </span>
-          <span className="block">ANDRÉ POLZIN</span>
-        </p>
-        <img
-          src="/images/about.jpg"
-          alt="myself"
-          className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110 duration-300 w-52"
-        />
+      <div className="flex flex-col lg:flex-row justify-center items-center p-5 text-white font-serif tracking-wider text-m gap-14">
+
+        <div className="flex flex-col items-center">
+          <img
+            src={dev}
+            alt="developer"
+            className="animate-bounce rounded-full w-10 h-10 md:w-20 md:h-20 lg:w-28 lg:h-28"
+          />
+          <div className="md:w-[400px] lg:w-[500px] border-2 border-slate-300 p-7 rounded lg:rounded-lg shadow-2xl text-center bg-gradient-to-r from-cyan-900 via-emerald-500 to-cyan-900">
+            <span className="block md:text-lg lg:text-3xl font-bold pb-3">
+              FULL-STACK DEVELOPER{" "}
+            </span>
+            <span className="block md:text-lg lg:text-3xl font-bold">
+              ANDRÉ POLZIN
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="/images/about.jpg"
+            alt="myself"
+            className="rounded-lg border-2 border-[#133d3d] shadow-2xl hover:scale-110 duration-300 w-[300px] md:w-[350px] md:h-[450px] lg:h-[500px] lg:w-[400px]"
+          />
+        </div>
+
       </div>
 
-      <div className="flex flex-col text-white font-serif tracking-wider gap-24 justify-center items-center">
-        <div className="flex flex-col gap-10 text-justify text-lg  border-b-2 shadow-lg p-5">
-          <p>
-            I am a passionate Software Developer with over a year of professional
-            experience and over 3 years building personal projects. I started
-            coding out of curiosity, and it quickly became a strong passion that
-            turned into a career.
-
+      <div className="flex flex-col text-white font-serif tracking-wider gap-8 justify-center items-center">
+        <div className="flex flex-col md:w-[85%] lg:text-2xl gap-10 text-justify justify-center items-center text-lg md:text-2xl border-b-2 shadow-sm p-5 lg:pb-10">
+          <p className="w-[85%] lg:w-[60%]">
+            I am a passionate Software Developer with over a year of
+            professional experience and over 3 years building personal projects.
+            I started coding out of curiosity, and it quickly became a strong
+            passion that turned into a career.
           </p>
-          <p>
+          <p className="w-[85%] lg:w-[60%]">
             I love creating things from scratch, learning new technologies, and
-            improving with every project I work on. My focus is to keep growing as
-            a developer and contribute to building meaningful, high-quality
+            improving with every project I work on. My focus is to keep growing
+            as a developer and contribute to building meaningful, high-quality
             software.
           </p>
         </div>
 
-        <div>
-          <p>Skills</p>
+        <div className="flex flex-wrap justify-around pb-5 w-[85%] md:text-2xl lg:h-[300px] lg:w-[600px]">
+          <h2 className="w-full text-center text-2xl md:text-3xl underline pb-5 animate-pulse">
+            Skills
+          </h2>
 
           <ul>
             <li>ReactJS</li>
-            <li>JavaScript</li>
             <li>TypeScript</li>
-            <li>CSS and Tailwind</li>
+            <li>JavaScript</li>
+            <li>Tailwind</li>
+            <li>CSS</li>
           </ul>
 
           <ul>
             <li>NodeJS</li>
-            <li>ExpressJS</li>
             <li>MongoDB</li>
+            <li>ExpressJS</li>
             <li>PostgreSQL</li>
             <li>Git and GitHub</li>
           </ul>
         </div>
-
       </div>
 
-      <div className="flex flex-col items-center mt-28 pt-10 border-t-2 leading-relaxed tracking-wider">
-        <h2 className="text-white text-5xl underline decoration-wavy pb-14 font-serif animate-pulse">
-          Projects
-        </h2>
+      <div className="flex flex-col items-center border-t-2 leading-relaxed tracking-wider">
         <ProjectList projects={projects.slice(0, 3)} />
         <Link
           to="/projects"

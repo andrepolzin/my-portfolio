@@ -19,7 +19,7 @@ const App = () => {
     )
   )
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <RouterProvider router={appRouter}/>
     </div>
   )
