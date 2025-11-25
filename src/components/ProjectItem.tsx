@@ -1,6 +1,6 @@
 const ProjectItem = ({ data }: any) => {
   return (
-    <div className="flex flex-col items-center bg-[#1b5657] w-full lg:h-[800px] md:w-[80%] lg:w-[500px] text-justify rounded text-white md:p-10 lg:p-5 hover:shadow-2xl hover:scale-110 duration-300">
+    <div className="flex flex-col items-center bg-[#1b5657] w-full lg:h-[800px] md:w-[80%] lg:w-[40%] text-justify rounded text-white md:p-10 lg:p-5 hover:shadow-2xl hover:scale-110 duration-300">
       <img src={data.image} alt={data.title} className="h-60 md:h-96 lg:h-[350px] rounded md:w-[90%] lg:w-[100%]" />
       {/* <iframe src={data.live} referrerPolicy="" sandbox="allow-scripts" title={data.title} className="w-2/6 h-96 rounded"></iframe> */}
       <div className="p-5 font-serif w-full">

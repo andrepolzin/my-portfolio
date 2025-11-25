@@ -13,7 +13,7 @@ const About = () => {
       <h1 className="flex justify-center p-5 lg:pt-10 text-white font-serif items-center text-3xl md:text-4xl underline animate-pulse">
         About Me
       </h1>
-      <div className="flex flex-col lg:flex-row items-center justify-evenly h-fit p-8 md:p-10 gap-5 lg:gap-8">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-evenly h-fit p-8 md:p-10 gap-5 lg:gap-8">
         <div className="flex flex-col gap-7 text-white order-2 lg:w-[65%] text-lg md:text-2xl text-justify font-serif md:leading-relaxed">
           <p>
             Hello there! My name is André, and I'm a self-taught software
