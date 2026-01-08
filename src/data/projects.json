@@ -1,5 +1,12 @@
 [
     {
+        "title": "MVC SSR ToDo List",
+        "image": "/images/todolist.jpg",
+        "description": "Server Side Rendering Todo List, using MVC architecture along with Handlebars, Node.js, JavaScript, Sequelize and also PostgreSQL",
+        "live": "https://ssr-todo-list.onrender.com/tasks",
+        "github": "https://github.com/andrepolzin/ssr-todo-list"
+    },
+    {
         "title": "Shopping Cart",
         "image": "/images/shoppingcart.png",
         "description": "The React shopping cart project simulates the experience of an user buying online goods. It has been developed with Typescript, Tailwind and dummyjson API. I could improve many concepts when developing it, such as Tailwind skills and component architecture.",
@@ -12,13 +19,6 @@
         "description": "React/TypeScript photo album loading data from Unsplash API, designed with Tailwind. This project allows someone to filter photos by category or/and specific name.",
         "live": "https://react-photo-album.onrender.com",
         "github": "https://github.com/andrepolzin/react-photo-album"
-    },
-    {
-        "title": "To Do List",
-        "image": "/images/todolist.png",
-        "description": "To Do List is a project that allows people to create a list of tasks and delete each task. It was developed on ReactJS, TailwindCSS and TypeScript. Also all the tasks are stored on the LocalStorage and then shown on the screen.",
-        "live": "https://react-todo-list-tu6d.onrender.com",
-        "github": "https://github.com/andrepolzin/todo-list"
     },
     {
         "title": "Quiz Game",
